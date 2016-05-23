@@ -1,4 +1,3 @@
-# phpList
-I'll upload things here, soon…
+This branch and its content is only for history purposes and is not used or maintained.
 
-I'm currently cleanifying my code to be able to share it.
+This is the very first phpList.
