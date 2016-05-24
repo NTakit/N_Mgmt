@@ -5,3 +5,5 @@ This branch and its content is only for history purposes and is not used or main
 This was the very first version N_Mgmt.
 
 It was just some kind of php-file-listing with a few options.
+
+The goal was to upload files by ftp and to be able to ( give ) access to it using an internet browser and a password.
