@@ -13,14 +13,19 @@ I'm currently cleanifying my code to be able to share it.
     - The main core calls the others functionnal parts only if necessary
     - New features can be added faster
     - Dependencies folders should be in the same folder than N_Mgmt
-  - Client's JS is now using Ajax requests to make things faster between server and client
+  - Client's side JavaScripts are now using Ajax requests to make things faster between server and client
+
+##### New dependencies :
+  - FineDiff (v0.6) for differential modifications calculation on file backup
+  - noUiSlider (v8.3.0) for… sliders
 
 ##### Complete interface rebuild :
-  - Smooth menus
+  - Smooth menu opening by clicking the top-left logo
   - Sizeable rows ( 32px to 128px )
   - Choose between images icons or lightweight ( font-Awesome ) icons
   - Easy way to make your own theme
-  - Better thumbnails management
+  - Better thumbnails management : enhancements on the "Resize_Images" function
+  - Full-screen thumbnails display added with parameterization of the images sizes by a slider
   - …
 
 ##### New features :
