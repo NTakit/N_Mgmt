@@ -7,11 +7,16 @@ I'm currently cleanifying my code to be able to share it.
 
 ## What's new ?
 #### LOT of things !
+  ##### Better code :
+    - Cleaner and easier to modify :
+      - One php file = One functionnal part
+      - The main core calls the others functionnal parts only if necessary
+    - JS now using Ajax requests to make things faster between server and client
 
-##### Complete interface rebuild :
-  - Smooth menus
-  - Sizeable rows ( 32px to 128px )
-  - Now using ajax requests to make things faster
+  ##### Complete interface rebuild :
+    - Smooth menus
+    - Sizeable rows ( 32px to 128px )
+    - …
 
 ## Preview
 ![alt tag](https://raw.githubusercontent.com/NTakit/N_Mgmt/master/preview-3.x.png)
