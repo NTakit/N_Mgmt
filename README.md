@@ -36,3 +36,8 @@ I'm currently cleanifying my code to be able to share it.
 
 ## Preview
 ![alt tag](https://raw.githubusercontent.com/NTakit/N_Mgmt/master/preview-3.x.png)
+
+
+## More history
+https://github.com/NTakit/N_Mgmt/blob/_old_v2/README.md
+https://github.com/NTakit/N_Mgmt/blob/_old_v1/README.md
