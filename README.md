@@ -24,14 +24,17 @@ I'm currently cleanifying my code to be able to share it.
   - …
 
 ##### New features :
+  - User's options are stored in an ini file so that they don't depend on the php-session
   - Ability to upload folders structure if you're using webkit ( thanks to plupload configuration )
   - Uploaded images can now be Tiny-fied if you've got a TinyPNG account.
   - Ability to download a folder's content as a zip file
-  - Option to do a backup when modifying a file.
+  - Option to create a backup when modifying a file
   - File backup can be used to see differential modifications
   - Options and users management have been re-thought :
     - Use of .ini files to make things easier
     - More options are available
+  - Corrections are made for french typography when editing as article : non-breaking space before [?;:!] and between «  »
+    - > This auto-correction should be made optionnal for non-french users
   - …
 
 
