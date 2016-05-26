@@ -7,7 +7,7 @@ I'm currently cleanifying my code to be able to share it.
 
 ## What's new ?
 #### LOT of things !
-##### Better coding and folders architecture :
+##### Better coding and folders/files organization :
   - Cleaner and easier to modify :
     - One php file = One functionnal part
     - The main core calls the others functionnal parts only if necessary
@@ -24,8 +24,9 @@ I'm currently cleanifying my code to be able to share it.
   - …
 
 ##### New features :
+  - Ability to upload folders structure if you're using webkit ( thanks to plupload configuration )
   - Uploaded images can now be Tiny-fied if you've got a TinyPNG account.
-  - Ability to download a folder's content as zip
+  - Ability to download a folder's content as a zip file
   - Option to do a backup when modifying a file.
   - File backup can be used to see differential modifications
   - Options and users management have been re-thought :
