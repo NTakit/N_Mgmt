@@ -32,7 +32,7 @@ Here are some of the things that were done in the 2.x versions :
     - Users.txt   ( -> List of users/passwords/status )
     - Powers.txt  ( -> List of powers applicable to a "status" )
   - Some other new features were left in the index.php file :
-    - Hide specefic prefixed files or extensions
+    - Hide specific prefixed files or extensions
     - Mark specific files or directories as read-only ( or copy-only ) for the users
 
 
