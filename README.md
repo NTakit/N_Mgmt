@@ -25,8 +25,12 @@ I'm currently cleanifying my code to be able to share it.
 
 ##### New features :
   - Uploaded images can now be Tiny-fied if you've got a TinyPNG account.
+  - Ability to download a folder's content as zip
   - Option to do a backup when modifying a file.
   - File backup can be used to see differential modifications
+  - Options and users management have been re-thought :
+    - Use of .ini files to make things easier
+    - More options are available
   - …
 
 
