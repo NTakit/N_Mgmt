@@ -1,0 +1,216 @@
+@charset "UTF-8";
+* { padding:0; margin:0; }
+a { text-decoration: none; color: inherit; }
+a:visited{ text-decoration: none; color: inherit; }
+a img{ border:0; }
+html{ height: 100%; overflow: hidden; background: #aaa; }
+body{ color: #000; font: 14px Sans-Serif; }
+#DropBox{ position: absolute; top: 0; bottom: 0; left: 0; right: 0; }
+#Hdr{
+	position: absolute; top: 0; left: 0; display: inline-block;
+	height: 17px; width: 100%; border-bottom: 1px solid #000;
+}
+#Hdr div{ position: absolute; }
+#Hdr div, #Hdr div a, #Hdr div img{ transition: all 200ms linear; }
+#Hdr div:hover{ opacity: 1; }
+#LogOut{ top: 8px; left: -1px; z-index: 2; opacity: 1; }
+#LogOut a{
+	border: 1px solid rgba(0,0,0,.8); border-bottom-right-radius: 100%;
+	padding: 14px 16px 14px 8px;	background-color: rgba(255,255,255,.6);
+	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 80%, rgba(255,255,255,1) 100%);
+}
+#LogOut a:hover{ background-color: rgba(255,255,255,.96); }
+#Icon{ top: 7px; left: 50px; z-index: 2; opacity: .9; }
+#Icon a{ padding: 4px; }
+#Icon img{ border: 2px solid rgba(0,0,0,.08); border-radius: 50%; }
+#Icon img:hover{ border: 2px solid rgba(0,0,0,.5); }
+#Path{
+	top: -1px; left: -1px; z-index: 1; opacity: .9; height: 16px;
+	border: 1px solid #000;
+	border-bottom-right-radius: 32px 100%;
+	background-color: rgba(255,255,255,.6);
+	background: linear-gradient(to bottom, rgba(255,255,255,.32) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,.32) 100%);
+	padding: 8px 40px 8px 96px;
+	font-size: 14px; font-weight: bold; color: #000;
+}
+#Path a{ padding: 1px 0; border-bottom: 2px solid rgba(0,0,0,.16); }
+#Path a:hover{ border-bottom: 2px solid #000; }
+#ErrInfo{ position: absolute; top: 48px; left: 25px; font-size: 14px; font-weight: bold; color: #FFF;}
+#Brwsr {
+	min-width: 400px;
+	margin: 80px 50px 0 50px;
+	transition: all .4s ease;
+}
+@media screen and (max-height: 700px){
+	#Brwsr { margin-top: 65px; }
+}
+@media screen and (max-height: 600px){
+	#Brwsr { margin-top: 50px; }
+}
+@media screen and (max-width: 1000px){
+	#Brwsr { margin-left: 30px; margin-right: 30px; }
+}
+@media screen and (max-width: 800px){
+	#Brwsr { margin-left: 15px; margin-right: 15px; }
+}
+
+#BrwsrHdr, #BrwsrFtr{
+	min-height: 28px;
+	border: 1px solid rgba(255,255,255,.32); margin: 0;
+	background-color: rgba(255,255,255,.32);
+	padding: 4px 16px;
+	font-size: 14px; font-weight: bold; color: #000;
+}
+#BrwsrHdr{
+	border-top-left-radius: 10px; border-top-right-radius: 20px;
+	background: linear-gradient(to bottom, rgba(255,255,255,.1) 0%, rgba(255,255,255,.6) 100%);
+}
+#BrwsrFtr{
+	position: relative;	background: linear-gradient(to bottom, rgba(255,255,255,.6) 0%, rgba(255,255,255,.1) 100%);	border-bottom-left-radius: 40px; border-bottom-right-radius: 10px;	text-align: right;
+}
+#Inf{ position: absolute; top: 10px; }
+#Agent{ position: absolute; right: 10px; }
+#List{	border: 1px solid #000; border-collapse: collapse; width: 100%;	background-color: #F3F3F3; box-shadow: 0 5px 10px -5px rgb(0,0,0);}
+@keyframes Opac-in{ 0% {opacity: 0;} 100% {opacity: 1;} }
+.Veil{
+	z-index: 90;
+	position: fixed; top: 0; right: 0; bottom: 0; left: 0;
+	margin: 0; background: rgba(0,0,0,0.5); padding: 0;
+	animation: Opac-in .8s ease-in-out;
+}
+.Mosaic{ display: none; }
+#InMosaic{	z-index: 95;	position: fixed; top: 118px; right: 50px; left: 50px;	border: 1px solid rgba(255,255,255,.32);	background: rgba(0,0,0,0.9);	margin: 0; padding: 0 8px;	animation: Opac-in .8s ease-in-out;}
+#InMosaic div{ display: inline-block; margin: 8px 12px; }
+#InMosaic div img{ border: 1px solid rgba(255,255,255,.32); }
+#InMosaic #ImgTitle{ color: #ddd; font-size: 10px; text-align: middle; }
+#InMosaic #ImgInfo{ color: #666; font-size: 9px; text-align: right; }
+.Upload{ display: none; }
+#UpldList{
+	z-index: 95;
+	position: fixed; bottom: -1px; left: -1px; width: 400px;
+	border: 1px solid rgba(0,0,0,.64); border-top-right-radius: 32px;
+	background-color: #E6E6E6; background: linear-gradient(to bottom, rgba(255,255,255,.64) 0%, rgba(255,255,255,.9) 100%);
+	padding: 10px 20px 10px 10px;
+	font-size: 13px;
+	animation: Opac-in .8s ease-in;
+}
+#UpldList div{ position: relative; padding: 2px; margin: 4px; }
+#UpldList a{ float: right; }
+.Container{ overflow: auto; }
+.Container::-webkit-scrollbar { height: 10px; width: 14px; }
+.Container::-webkit-scrollbar-track-piece{ /* Scroll rail */	border: solid 4px transparent; border-right-width: 6px; border-left-width: 6px;	background: rgba(255,255,255,.6);	box-shadow: inset 1px 1px 0 0 rgba(144,144,144,.2),				inset -1px -1px 0 0 rgba(216,216,216,.2);}
+#InMosaic::-webkit-scrollbar-track-piece{ background: rgba(255,255,255,.3); }
+#UpldList::-webkit-scrollbar-track-piece{ background: none; margin: 38px 0 2px 0; }
+.Container::-webkit-scrollbar-thumb{ /* Scroll bar */
+	border: solid 0px transparent; border-left-width: 2px; border-right-width: 2px;	min-height: 60px;
+	background-clip: padding-box;
+	border-top-left-radius: 8px 5px;
+	border-top-right-radius: 8px 5px;
+	border-bottom-right-radius: 8px 5px;
+	border-bottom-left-radius: 8px 5px;
+	transition: all 4s ease;
+	box-shadow: inset 0 0 0 1px rgba(0,0,0,.5),			/* Border */
+				inset 0 0 0 6px rgba(255,255,255,.2);	/* Body */
+}
+.Container::-webkit-scrollbar-thumb:hover{
+	box-shadow: inset 0 0 0 1px rgba(0,0,0,.64),
+				inset 0 0 0 6px rgba(255,255,255,.32);
+}
+.Container::-webkit-scrollbar-thumb:active{
+	box-shadow: inset 0 0 0 1px rgba(0,0,0,.8),
+				inset 0 0 0 6px rgba(255,255,255,.5);
+}
+#InMosaic::-webkit-scrollbar-thumb{
+	box-shadow: inset 0 0 0 1px rgba(0,0,0,.6),
+				inset 0 0 0 6px rgba(128,128,128,.8);
+}
+#InMosaic::-webkit-scrollbar-thumb:hover{
+	box-shadow: inset 0 0 0 1px rgba(0,0,0,.8),
+				inset 0 0 0 6px rgba(160,160,160,.8);
+}
+#InMosaic::-webkit-scrollbar-thumb:active{
+	box-shadow: inset 0 0 0 1px rgba(0,0,0,.9),
+				inset 0 0 0 6px rgba(160,160,160,1);
+}
+
+#File{ min-width: 320px; }
+#Type{ width: 200px; }
+#Size{ width: 80px; }
+#Date{ width: 150px; }
+#Chmd{ width: 100px; }
+#List th, #List td{ position: relative; text-align: left; }
+#List th { border: 1px solid #000; padding: 5px 10px; color: #FFF; }
+#List th:first-of-type { padding-left: 35px; }
+#List tr:nth-of-type(odd) { background-color: #E6E6E6; }
+#List tr td { transition: all 200ms linear; }
+#List tr:hover td { background-color:#CACACA; }
+#List tr:hover td a { color: #000; }
+#List td a { display: block; padding: 7px 10px; color: #663300; }
+#List td a > img { margin: -4px -10px; padding-left: 14px; }
+#List td:first-of-type a img { margin: 0 8px -2px -14px; }
+#List td > div { position: relative; }
+.Btn{
+	display: inline-block; z-index: 1;
+	border: 1px solid transparent; border-radius: 5px;
+	padding: 3px 6px;
+	cursor: pointer; transition: 100ms linear;
+}
+.Btn:hover{ background: rgba(255,255,255,.5); border:1px solid rgba(0,0,0,.5); }
+.Btn img{ padding: 2px 0 0 0; }
+.Tools{
+	position: absolute; display: inline-block;
+	top: 2px; right: 5px;
+}
+.Tools .Btn{ padding: 2px 4px; }
+
+.DBtn, .TBtn, .TBtn0, .TBtn1{ margin: 0 -2px; }
+.Chm{ position: absolute; top: 1px; right: 8px; }
+.TBtn1{ border:1px solid rgba(255,255,255,.2); background: rgba(0,0,0,.1); }
+.TBtn img, .TBtn0 img{ opacity: 0.5; }
+.TBtn, .TBtn0{ border: 1px solid rgba(0,0,0,.08); background: rgba(255,255,255,.04); }
+.CP{
+	position: absolute; top: -7px; left: 14px; z-index: 1;
+	height: 20px; width: 48px;
+	margin: 4px 0;
+	border: 1px solid #555; border-radius: 4px;
+	padding: 0;
+	cursor: pointer; transition: 100ms linear;
+}
+.CP:hover{
+	height: 27px; width: 66px; margin: 0;
+	border: 1px solid #8f8f8f; border-radius: 1px;
+}
+
+/*---- Password Page ----*/
+#Password{
+	margin: 100px 50px;
+	border: 1px solid;
+	border-radius: 10px;
+	width: auto;
+	background-color: #E6E6E6;
+	padding: 20px;
+	text-align: center;
+}
+#Password p{ padding: 10px 0px; }
+.TypeArea{ width: 8em; border-radius: 5px; padding:5px; }
+#Password .Btn{
+	box-shadow: inset 0px 1px 3px 0px #91b8b3;
+	background: linear-gradient(to bottom, #778d88 5%, #6c7c7c 100%);
+	background-color: #778d88;
+	border-radius: 5px;
+	border: 1px solid #566963;
+	display: inline-block;
+	color: #ffffff;
+	font-family: arial;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 6px 10px;
+	text-decoration: none;
+	text-shadow: 0px -1px 0px #2b665e;
+}
+#Password .Btn:hover {
+	background: linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+	background-color: #6c7c7c;
+}
+#Password .Btn:active { position: relative; top: 1px; }
+/*---- / Password Page ----*/
