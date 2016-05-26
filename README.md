@@ -36,3 +36,9 @@ Other new features without dependencies :
 All these enchancements were done in the goal to create some kind of management out of the version 1 which was a "flat list" of directory content.
 
 # Previews
+2.2
+![alt tag](https://raw.githubusercontent.com/NTakit/N_Mgmt/_old_v2/preview-2.2.png)
+2.1
+![alt tag](https://raw.githubusercontent.com/NTakit/N_Mgmt/_old_v2/preview-2.1.png)
+2.0
+![alt tag](https://raw.githubusercontent.com/NTakit/N_Mgmt/_old_v2/preview-2.0.png)
