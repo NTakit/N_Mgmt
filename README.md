@@ -40,6 +40,7 @@ I'm currently cleanifying my code to be able to share it.
     - More options are available
   - Corrections are made for french typography when editing as article : non-breaking space before [?;:!] and between «  »
     -> This auto-correction should be made optionnal for non-french users
+  - Plain text edition has been made available in case the user doesn't want to include/use other editors
   - …
 
 
