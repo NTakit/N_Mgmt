@@ -20,7 +20,7 @@ Here are some of the things that were done in the 2.x versions :
 ##### New features with dependencies :
   - Edition of code with CodeMirror (v4.1)
   - Edition of web pages with TinyMCE (v4.0.26)
-  - Uploads management with plupload (v2.1.2)
+  - Uploads management with plupload (v2.1.2), including drag & drop and queeing
   - Color picker with Colpick Color Picker (2013 version)
   
 ##### Other new features without dependencies :
