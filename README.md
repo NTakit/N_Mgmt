@@ -24,11 +24,11 @@ Other new features without dependencies :
   - Ability to create new directories or files, rename, move or delete
   - Ability to choose with informations are shown in the table
   - Recycle Bin management
-  - Files are used to store informations :
-    - Options.txt ( -> List of things modifiable )
+  - Files are used to store informations and modify parameters :
+    - Options.txt ( -> List of modifiable things )
     - Users.txt   ( -> List of users/passwords/status )
     - Powers.txt  ( -> List of powers applicable to a "status" )
-  - Some optional new features were left in the index.php file :
+  - Some other new features were left in the index.php file :
     - Hide specefic prefixed files or extensions
     - Mark specific files or directories as read-only ( or copy-only ) for the users
 
@@ -36,9 +36,9 @@ Other new features without dependencies :
 All these enchancements were done in the goal to create some kind of management out of the version 1 which was a "flat list" of directory content.
 
 # Previews
-2.2
+# 2.2
 ![alt tag](https://raw.githubusercontent.com/NTakit/N_Mgmt/_old_v2/preview-2.2.png)
-2.1
+# 2.1
 ![alt tag](https://raw.githubusercontent.com/NTakit/N_Mgmt/_old_v2/preview-2.1.png)
-2.0
+# 2.0
 ![alt tag](https://raw.githubusercontent.com/NTakit/N_Mgmt/_old_v2/preview-2.0.png)
