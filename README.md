@@ -1,12 +1,14 @@
 # N_Mgmt - v2
 
+## Purpose
+
 This branch and its content is only for history purposes and is not used or maintained.
 
 It was a complete rebuild of the very first version, with enchancements and a lot of new features.
 
 The last 2.2 version wasn't updated since July 2014 but is still is use.
 
-# What's new ?
+## What's new ?
 
 Here are some of the things that were done in the 2.x versions :
 ( The versions noted are the ones I was using when working on it, it may work or not with more recent ones )
@@ -35,10 +37,10 @@ Other new features without dependencies :
 
 All these enchancements were done in the goal to create some kind of management out of the version 1 which was a "flat list" of directory content.
 
-# Previews
-# 2.2
+## Previews
+### 2.2
 ![alt tag](https://raw.githubusercontent.com/NTakit/N_Mgmt/_old_v2/preview-2.2.png)
-# 2.1
+### 2.1
 ![alt tag](https://raw.githubusercontent.com/NTakit/N_Mgmt/_old_v2/preview-2.1.png)
-# 2.0
+### 2.0
 ![alt tag](https://raw.githubusercontent.com/NTakit/N_Mgmt/_old_v2/preview-2.0.png)
