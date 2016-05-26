@@ -39,5 +39,7 @@ I'm currently cleanifying my code to be able to share it.
 
 
 ## More history
-https://github.com/NTakit/N_Mgmt/blob/_old_v2/README.md
-https://github.com/NTakit/N_Mgmt/blob/_old_v1/README.md
+
+[Version 2](https://github.com/NTakit/N_Mgmt/blob/_old_v2/README.md)
+
+[Version 1](https://github.com/NTakit/N_Mgmt/blob/_old_v1/README.md)
