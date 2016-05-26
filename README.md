@@ -11,7 +11,8 @@ I'm currently cleanifying my code to be able to share it.
   - Cleaner and easier to modify :
     - One php file = One functionnal part
     - The main core calls the others functionnal parts only if necessary
-  - JS now using Ajax requests to make things faster between server and client
+    - New features can be added faster
+  - Client's JS is now using Ajax requests to make things faster between server and client
 
 ##### Complete interface rebuild :
   - Smooth menus
