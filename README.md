@@ -44,8 +44,15 @@ I'm currently cleanifying my code to be able to share it.
   - …
 
 
-## Preview
+## Previews
+#### Main view
 ![alt tag](https://raw.githubusercontent.com/NTakit/N_Mgmt/master/preview-3.x.png)
+#### Menu - "Main"
+![alt tag](https://raw.githubusercontent.com/NTakit/N_Mgmt/master/preview-menu1.png)
+#### Menu - "Config."
+![alt tag](https://raw.githubusercontent.com/NTakit/N_Mgmt/master/preview-menu2.png)
+#### Menu - "Theming"
+![alt tag](https://raw.githubusercontent.com/NTakit/N_Mgmt/master/preview-menu3.png)
 
 
 ## More history
