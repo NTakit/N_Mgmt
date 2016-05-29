@@ -45,3 +45,6 @@ All these enchancements were done in the goal to create some kind of management 
 ![alt tag](https://raw.githubusercontent.com/NTakit/N_Mgmt/_old_v2/preview-2.1.png)
 ### 2.0
 ![alt tag](https://raw.githubusercontent.com/NTakit/N_Mgmt/_old_v2/preview-2.0.png)
+
+## More history
+[Version 1](https://github.com/NTakit/N_Mgmt/blob/_old_v1/README.md)
