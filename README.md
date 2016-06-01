@@ -31,7 +31,7 @@ I'm currently cleanifying my code to be able to share it.
 ##### New features :
   - User's options are stored in an ini file so that they don't depend on the php-session
   - Ability to upload folders structure if you're using webkit ( thanks to [PLupload](http://www.plupload.com/) configuration )
-  - Uploaded images can now be Tiny-fied if you've got a [Tinify](http://tinify.com) account.
+  - Uploaded images can now be "tinified" if you've got a [Tinify](http://tinify.com) account.
   - Ability to download a folder's content as a zip file
   - Option to create a backup when modifying a file
   - File backup can be used to see differential modifications
