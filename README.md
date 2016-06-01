@@ -16,13 +16,13 @@ I'm currently cleanifying my code to be able to share it.
   - Client's side JavaScripts are now using Ajax requests to make things faster between server and client
 
 ##### New dependencies :
-  - FineDiff (v0.6) for differential modifications calculation on file backup
-  - noUiSlider (v8.3.0) for… sliders
+  - [FineDiff](https://github.com/gorhill/PHP-FineDiff) (v0.6) for differential modifications calculation on file backup
+  - [noUiSlider](http://refreshless.com/nouislider/) (v8.3.0) for… sliders
 
 ##### Complete interface rebuild :
   - Smooth menu opening by clicking the top-left logo
   - Sizeable rows ( 32px to 128px )
-  - Choose between images icons or lightweight ( font-Awesome ) icons
+  - Choose between images icons or lightweight ( [Font Awesome](fortawesome.github.io/Font-Awesome) ) icons
   - Easy way to make your own theme
   - Better thumbnails management : enhancements on the "Resize_Images" function
   - Full-screen thumbnails display added with parameterization of the images sizes by a slider
@@ -30,7 +30,7 @@ I'm currently cleanifying my code to be able to share it.
 
 ##### New features :
   - User's options are stored in an ini file so that they don't depend on the php-session
-  - Ability to upload folders structure if you're using webkit ( thanks to plupload configuration )
+  - Ability to upload folders structure if you're using webkit ( thanks to [PLupload](http://www.plupload.com/) configuration )
   - Uploaded images can now be Tiny-fied if you've got a [TinyPNG](https://tinypng.com/) account.
   - Ability to download a folder's content as a zip file
   - Option to create a backup when modifying a file
